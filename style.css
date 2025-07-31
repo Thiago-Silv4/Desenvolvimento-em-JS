@@ -1,63 +1,47 @@
+/* Devem ser ultilizadas em qualquer lugar */
+
+
+:root{
+
+    --cor-primaria:red;
+    --cor-secundaria:green;
+    --cor-texto:gray;
+    --espacamento:20px;
+    --fundo:#2555;
+    --borda:20px;
+    --cor-button:blue;
+
+}
+
 body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.0;
-    margin: 0;
-    padding: 0;
-    background-color: azure;
-    color: #fff;
-}
 
-head{
-    background-color: #fff;
-    color: azure;
-    padding: 20px 0;
-    text-align: center;
-}
-
-nav{
-    background-color: #fff;
-    padding: 20px 20px 5px 20px;
-}
-
-nav ul{
-    list-style: none;
-    padding: 0;
-}       
-
-nav ul li{
-
-    display: inline;
-    margin-right: 20px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+color: var(--cor-texto);
+margin: 0;
+padding: var(--espacamento);
+background-color: var(--fundo);
 
 }
 
-nav a{
-    color: azure;
-    text-decoration: none;
-
-
+.botao-primario{
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
 }
 
-main{
-    width: 80%;
-    margin: 20px auto;
+.botao-secundario{
+--cor-button:red;
+--fundo-btn:yellow;
+color: var(--cor-button);
+background-color: var(--fundo-btn);
+padding: var (var(--espacamento));
+border-radius: var(--borda);
 }
 
-article{
-    background-color: #fff; 
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5 px rgba(0, 0, 0, 0.1);
-}
+.teste{
 
-header h1{  
-    color: #fff;
 
-}
+background-color: var(--cor-button);
 
-h1{
-    font-size: 2em;
-    margin: 0;
+
 
 }
