@@ -1,49 +1,136 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cards Responsivos com Cores Diferentes</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cards Responsivos com Conteúdo</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #333;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .card {
+      width: 300px;
+      min-height: 220px;
+      border-radius: 12px;
+      padding: 20px;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.3s ease;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .card h2 {
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 1rem;
+      flex-grow: 1;
+      margin-bottom: 15px;
+    }
+
+    .card button {
+      padding: 10px 15px;
+      background-color: rgba(255,255,255,0.2);
+      border: none;
+      color: white;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .card button:hover {
+      background-color: rgba(255,255,255,0.4);
+    }
+
+    /* Cores diferentes */
+    .card1 { background-color: #FF6B6B; }
+    .card2 { background-color: #4ECDC4; }
+    .card3 { background-color: #FFD93D; color: #333; }
+    .card4 { background-color: #1A535C; }
+    .card5 { background-color: #FF9F1C; }
+    .card6 { background-color: #6A4C93; }
+
+    /* Responsivo */
+    @media (max-width: 768px) {
+      .card {
+        width: 100%;
+        max-width: 90%;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <!-- Card 1 -->
-        <div class="card card-1">
-            <div class="card-content">
-                <h3> Card 1</h3>
-                <p>MOUSE LOGITECH.</p>
-                 <img src="mouse.jpg"
-               
-            </div>
-        </div>
 
-        <!-- Card 2 -->
-        <div class="card card-2">
-            <div class="card-content">
-                <h3> Card 2</h3>
-                <p>CADEIRA ERGONOMICA.</p>
-                <img src="cadeira.webp"
-                <button></button>
-            </div>
-        </div>
+  <h1>Cards Responsivos com Conteúdo</h1>
 
-        <!-- Card 3 -->
-        <div class="card card-3">
-            <div class="card-content">
-                <h3> Card 3</h3>
-                <p>Outro card com uma cor diferente para destacar o conteúdo.</p>
-                <button></button>
-            </div>
-        </div>
+  <div class="container">
+    <div class="card card1">
+      <h2>Card Vermelho</h2>
+      <p>Este é o conteúdo do primeiro card. Ele se adapta à tela.</p>
+      <button>A cor vermelha possui uma vasta simbologia, variando entre culturas e contextos. Geralmente, está associada à paixão, amor, energia, força, calor, e também a perigo, agressão e guerra. Pode representar tanto o lado positivo do desejo e da vitalidade, quanto o negativo do conflito e da destruição. </button>
+    </div>
 
-        <!-- Card 4 -->
-        <div class="card card-4">
-            <div class="card-content">
-                <h3>Card 4</h3>
-                <p>Este card também se adapta à tela e tem uma cor própria.</p>
-                <button></button>
-            </div>
-        </div>
+    <div class="card card2">
+      <h2>Card Verde Água</h2>
+      <p>Um card com um tom tropical. Ideal para destacar ideias.</p>
+      <button>A cor verde-água simboliza calma, frescor e renovação, remetendo à natureza e à tranquilidade das águas. É uma cor que transmite equilíbrio, saúde e vitalidade, especialmente quando associada à água. Além disso, o verde-água pode evocar sentimentos de relaxamento e felicidade, sendo uma escolha popular para ambientes que buscam transmitir essas sensações. </button>
+    </div>
+
+    <div class="card card3">
+      <h2>Card Amarelo</h2>
+      <p>Cor vibrante para chamar atenção de forma positiva.</p>
+      <button>A cor amarela simboliza alegria, otimismo, felicidade, criatividade e sabedoria. É uma cor associada ao sol, ao verão e à energia positiva, além de estimular a concentração e o raciocínio. Em diferentes culturas, o amarelo pode ter outros significados, como felicidade e esplendor na China, ou enfermidade e sabedoria no Irã Adobe Express. </button>
+    </div>
+
+    <div class="card card4">
+      <h2>Card Azul Escuro</h2>
+      <p>Um tom mais sério e profissional, ótimo para negócios.</p>
+      <button>A cor azul escuro, especialmente o azul-marinho, evoca sentimentos de seriedade, confiança, estabilidade e profissionalismo. Também pode transmitir poder, autoridade e até elegância, dependendo do contexto. Em alguns casos, pode estar associada à tristeza ou melancolia, mas geralmente é vista como uma cor que inspira segurança e tranquilidade. </button>
+    </div>
+
+    <div class="card card5">
+      <h2>Card Laranja</h2>
+      <p>Perfeito para destacar promoções ou novidades.</p>
+      <button>A cor laranja geralmente simboliza criatividade, entusiasmo, alegria, diversão, otimismo e energia. Em algumas culturas, também pode representar calor, amizade e aventura. Além disso, o laranja pode ser associado à abundância, fertilidade e até mesmo ao luto em algumas culturas.</button>
+    </div>
+
+    <div class="card card6">
+      <h2>Card Roxo</h2>
+      <p>Visual moderno e criativo para projetos e ideias.</p>
+      <button>A cor roxa, ou violeta, tem significados diversos, frequentemente associados à realeza, nobreza, espiritualidade e mistério. Em algumas culturas, também pode representar luto ou espiritualidade. Historicamente, o roxo era raro e caro de produzir, o que o ligava à riqueza e poder. </button>
+    </div>
+  </div>
+
 </body>
 </html>
+
