@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clone YouTube</title>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <table width="100%">
+            <tr>
+                <td>
+                    <h1>YouTube</h1>
+                </td>
+                <td>
+                    <form>
+                        <input type="text" placeholder="Pesquisa" size="60">
+                        <button type="submit">Pesquisar</button>
+                    </form>
+                </td>
+                <td width="15%" align="right">
+                    <button>Login</button>
+                </td>
+            </tr>
+        </table>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <table width="100%">
+            <tr>
+                <!-- Menu lateral -->
+                <td width="20%" valign="top">
+                    <nav>
+                        <ul>
+                            <li><a href="#">Início</a></li>
+                            <li><a href="#">Explorar</a></li>
+                            <li><a href="#">Inscrições</a></li>
+                            <hr>
+                            <li><a href="#">Biblioteca</a></li>
+                            <li><a href="#">Histórico</a></li>
+                            <li><a href="#">Vídeos</a></li>
+                            <li><a href="#">Ver mais</a></li>
+                            <li><a href="#">Vídeos marcados</a></li>
+                        </ul>
+                    </nav>
+                </td>
+
+                <!-- Conteúdo de Vídeo -->
+                <td width="80%" valign="top">
+                    <div>
+                        <iframe width="800" height="450"
+                            src="https://www.youtube.com/embed/JA3vMBxLeMY?list=RDJA3vMBxLeMY"
+                            title="SHAMAN | FAIRY TALE (OFFICIAL VIDEO CLIP)"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen>
+                        </iframe>
+
+                        <h2>TÍTULO DO VÍDEO</h2>
+                        <p>1.200 visualizações - 01 de agosto de 2025</p>
+
+                        <table width="100%">
+                            <tr>
+                                <td width="10%">
+                                    <img src="icone.png" alt="Canal" width="50">
+                                </td>
+                                <td width="80%">
+                                    <h3>VIVENDO INTENSAMENTE</h3>
+                                    <p>1,5 milhões de inscritos</p>
+                                </td>
+                                <td width="10%">
+                                    <button type="button">Inscreva-se</button>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <!-- Seção Compartilhar -->
+                        <div>
+                            <button>Gostei</button>
+                            <button>Não Gostei</button>
+                            <button>Compartilhar</button>
+                            <button>Salvar</button>
+                        </div>
+
+                        <!-- Seção Comentários -->
+                        <div>
+                            <h3>Comentários (1.500)</h3>
+                            <form>
+                                <textarea placeholder="Adicione um comentário público..." rows="2" cols="80"></textarea><br>
+                                <button type="submit">Comentar</button>
+                            </form>
+                            <hr>
+                            <div>
+                                <p><strong>Usuário 1:</strong> Isso foi útil.</p>
+                                <p><strong>Usuário 2:</strong> Gostei bastante.</p>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <hr>
+        <p>&copy; 2025 YouTube Clone (HTML)</p>
+    </footer>
+
+</body>
+</html>
