@@ -1,78 +1,12 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script2.js"></script>
     <title>Document</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-top: 50px;
-        }
-
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .output {
-            margin-top: 20px;
-            font-size: 20px;
-            padding: 10px;
-            border: 1px solid #ccc;
-            width: 300px;
-            text-align: center;
-        }
-
-        input, button, select {
-            margin: 10px;
-        }
-    </style>
 </head>
 <body>
-
-    <div class="container">
-        <h1>EDITOR DE MENSAGEM SIMPLES</h1>
-        
-        <textarea id="message" rows="4" cols="50" placeholder="Digite sua mensagem aqui"></textarea>
-        
-        <br>
-        
-        <label for="color">Escolha sua cor preferida: </label>
-        <select id="color">
-            <option value="black">Preto</option>
-            <option value="red">Vermelho</option>
-            <option value="blue">Azul</option>
-            <option value="green">Verde</option>
-            <option value="orange">Laranja</option>
-        </select>
-        
-        <br>
-        
-        <button onclick="exibirMensagem()">Exibir Mensagem</button>
-        <button onclick="limparConteudo()">Limpar</button>
-        
-        <div id="output" class="output"></div>
-    </div>
-
-    <script>
-        function exibirMensagem() {
-            var mensagem = document.getElementById('message').value;
-            var cor = document.getElementById('color').value;
-            var output = document.getElementById('output');
-            output.textContent = mensagem;
-            output.style.color = cor;
-        }
-
-        function limparConteudo() {
-            document.getElementById('message').value = '';
-            document.getElementById('output').textContent = '';
-        }
-    </script>
-
+    
 </body>
 </html>
