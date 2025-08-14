@@ -4,113 +4,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-   <script src="aulao9.js"></script>
 </head>
 <body>
-   <h3>Compras</h3>
+    <script>
+    //  Atividade 1: Função de Saudação Personalizada
+    //  Crie uma função chamada saudacao que recebe um nome e um horário
+    //  (manhã, tarde ou noite) e retorna uma saudação apropriada. Utilize parametros.
 
+//     function saudacaoPersonalizada(saudacao, nome){
+    
+//     if (saudacao === 'Bom dia'){
+//         console.log('Bom dia',nome)
+//     }else if(saudacao ==='Boa tarde'){
+//         console.log('Boa tarde',nome)
+//     }else if(saudacao === 'Boa noite'){
+//         console.log('Boa noite',nome)
+//     }
+// }
+//     saudacaoPersonalizada('Bom dia','Thiago');
+//     saudacaoPersonalizada('Boa tarde','Pedro');
+//     saudacaoPersonalizada('Boa noite','Silva');
 
- <script>
+//  Atividade 2: Calculadora Simples
+//  Crie uma função calculadora que recebe dois números e uma operação 
+// ('soma', 'subtracao', 'multiplicacao', 'divisao') e retorna o resultado.
 
-// CALCULO IMC 
-
-// function imc(peso, altura){
-//   let imc  = peso/altura**2
-//   console.log(imc)
+// function operacaoPersonalizada(operacao,n1,n2){
+//     if (operacao === 'soma'){
+//         console.log(n1+n2)
+//     }else if (operacao === 'subtracao'){
+//         console.log(n1+n2)
+//     }else if (operacao === 'multiplicacao'){
+//         console.log(n1+n2)
+//     }else if (operacao === 'divisao'){
+//         console.log(n1+n2)
+//     }
 // }
 
+// operacaoPersonalizada(10,6)
 
-// let peso =  parseFloat(prompt('Peso: '))
-// let altura =  parseFloat(prompt('altura: '))
-// imc(peso,altura)
+//  Atividade 3: Validador de Senha -  Utilize variáveis globais.
+//  Crie uma função validarSenha que verifica se uma senha tem pelo menos 8 
+// caracteres, contém pelo menos um número e uma letra maiúscula.
 
-
-
-// function imc(){
-//     let peso =  parseFloat(prompt('Peso: '))
-//     let altura =  parseFloat(prompt('altura: '))
-//     let imc  = peso/(altura**2)
-//     console.log(imc)
+// var letrasMaiusculas = /[A-Z]/;
+// var letrasMinusculas = /[a-z]/; 
+// var numeros = /[0-9]/;
+// var caracteresEspeciais = /[!|@|#|$|%|^|&|*|(|)|-|_]/;
+// var letra = "P";
+// if(letrasMaiusculas.test(letra)){
+//  console.log('sucesso');
+// } else {
+//  console.log('erro');
+// }
+// var senha = "teste12345";
+// if(senha.length == 8){
+//  console.log('sucesso');
+// } else {
+//  console.log('erro');
 // }
 
+//  Atividade 4: Gerador de Tabuada utilize variáveis locais. 
+//  Crie uma função gerarTabuada que recebe um número e retorna sua tabuada de 1 a 10.
 
-// imc()
-
-
-// let peso =  parseFloat(prompt('Peso: '))
-// let altura =  parseFloat(prompt('altura: '))
-
-
-
-// function imc(){
-//     let imc  = peso/(altura**2)
-//     console.log(imc)
+// for (let i = 1; i <= 10; i++) {
+//   for (let j = 1; j <= 10; j++) {
+//       console.log(`${i} x ${j} = ${i * j}`);
+//   }
+// 	console.log();
 // }
 
-
-
-// imc()
-
-// FUNÇÃO TABUADA
-
-// <!DOCTYPE html>
-// <html lang="en">
-// <head>
-//     <meta charset="UTF-8">
-//     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-//     <title>Document</title>
-//    <script src="aula9.js"></script>
-//</head>
-// <body>
-//    <h3>Compras</h3>
-
-
-//  <script>
-// // function imc(peso, altura){
-//   let imc  = peso/altura**2
-//   console.log(imc)
+// function gerarTabuada(numero){
+//     for (let i = 1; 1 <=10; i= i + 1){
+//         console.log(numero + 'x' + i + '-' + (numero * i));
+//     }
 // }
 
+// Atividade 5: CRie uma calculadora de IMC, utilize parâmetros
+// 1 -  O usuario precisa digitar o peso e a idade
+// 2 -  O sistema precisa fazer o calculo
+// 3 -  Precisa mostrar ao usuário a saída de acordo com o calculo
+// Obesidade 1, peso normal, desnutrição, obesidade 2, obedidade 3. 
 
-// let peso =  parseFloat(prompt('Peso: '))
-// let altura =  parseFloat(prompt('altura: '))
-// imc(peso,altura)
+function calcularIMC(altura, peso) {
+    const imc = peso / (altura * altura)
+    if (imc < 10.5){
+        console.log('Desnutrição')
+    }else if (imc >= 18.5 && imc < 24.9){
+        console.log('Peso Normal')
+    }else if (imc >=25 && imc <29.9){
+        console.log('Obesidade I')
+    }else if (imc >= 30 && imc <34.9){
+        console.log('Obesidade 2')
+    } else {
+        console.log('Obesidade 3')
+    }
+}
+calcularIMC(70, 1.75);
+    
+</script>
 
-
-
-// function imc(){
-//     let peso =  parseFloat(prompt('Peso: '))
-//     let altura =  parseFloat(prompt('altura: '))
-//     let imc  = peso/(altura**2)
-//     console.log(imc)
-// }
-
-
-// imc()
-
-
-// let peso =  parseFloat(prompt('Peso: '))
-// let altura =  parseFloat(prompt('altura: '))
-
-
-
-// function imc(){
-//     let imc  = peso/(altura**2)
-//     console.log(imc)
-// }
-
-
-
-// imc()
-
-
-
-//</script>
-//</body>
-//</html>
-
-
-
-//</script>
-//</body>
-//</html>
+</body>
+</html>
