@@ -1,33 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script2.js"></script>
+    <title>Home</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
 
-    <title>Testando JavaScript</title>
 </head>
 <body>
-    <h1>Metodo Básico de Saídas com JS</h1>
+ <div id="container">
 
-<!--Vai interagir com o ambiente de teste -->
-<button onclick="console.log('Mensagem no Console')">console.log()</button>
-<!-- Interagir com caixas de alerta da pagina -->
-<button onclick="alert"('Alerta')>Alert()</button>
-<!-- Vai interagir com o corpo da página -->
-<button onclick="document.write(<h2>Documento Subscrito</h2>)">Documen.Write()</button>
-<!-- Vai interagir com o corpo da página -->
-<button onclick="ducument.getElementById('demo').InnerHTML = 'Texto alerado'">innerHTML()</button>
+        <div id="navigation" class="navigation">
+             <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="quem.html">Quem Somos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="trabalhe.html">Trabalhe Conosco</a></li>
+
+                
+                <li id = 'treeline-icon'class='treeline-icon' onclick="openNav()">&#9776;</li>
+
+             </ul>
+        </div>
+
+        <div class="capa">
+            <div class="profile-pic">
+            
+                <a href="contato.html"><img src="img.png" alt="imagem" ></a>
+
+            </div>
+
+
+        </div>
+
+        <div class="profile-title">
+            <h1>TITULO <span> 01 </span> </h1>
+            <h2></h2>
+
+        </div>
+
+
+
+
+        <footer class="rodape">
+
+        <p class="texto_footer"> Nome 2025</p>
+        </footer>
+
+
+ </div>
     
-<p id="('demo')">Esse texto vai ser alterado</p>
-
-
+    
 </body>
-<script>
-
-console.log('demo')
-document.write(!<p>Adicionar durante o carregamento</p>)
-
-
-</script>
 </html>
