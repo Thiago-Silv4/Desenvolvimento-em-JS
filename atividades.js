@@ -92,3 +92,7 @@
 
 // Atividade 5
 
+Air Supply - Making Love Out Of Nothing At All (Official HD Video)
+Bonnie Tyler - Total Eclipse of the Heart (Turn Around) (Official Video)
+
+
