@@ -1,59 +1,39 @@
-// 1 -  descubra o valor hora do trabalhador
-// 2 -  aplique uma função hora extra 50%
-// 3 -  aplique uma função o calculo da quantidade de horas extra que foi realizada x extra
-// 4 -  aplique uma outra função que some o salário mais as extras
-// 5 -  mostre o total a receber  
+class Salario{
+      constructor(carga, salario){
+       this.carga = carga;
+       this.salario = salario;      
 
+      }
+     
+      hora_colaborador(){
+      let cal = this.salario / this.carga
+      return cal 
+      }
 
-function valor_hora(carga, salario){
-  return salario / carga
-}
+      extra_colaborador(ho_colab){
+      let cal =  ho_colab * 1.5
+      return cal
+      }
+      
+    quant_extra(quantidade, ho_colab){
+       return quantidade * ho_colab   
+    }
+    
+    salario_total(salario, quant_extra){
 
+        return salario +  quant_extra
 
-function h_extra(valor_h){
-    return valor_h * 1.5
-}
-
-
-
-function quantidade_extras(quantidade,h_extra){
- return quantidade * h_extra
-}
-
-
-
-function soma_sal_extra(quantidade_extra, salario){
- return quantidade_extra + salario
-}
-
-
-
-function sistema_rh(){
-  let salario =  parseFloat(prompt('Digite o salário: '))
-  let carga =  parseFloat(prompt('Carga Horária: '))
-  let quantidadeHoras =  parseFloat(prompt('quantidade horas: ')) 
-
-
-  console.log('Sistema de horas:  ')
-
-
-  let valor_h = valor_hora(carga, salario)
-  console.log('Valor hora R$', valor_h.toFixed(2))
-  
-  let extra_h  = h_extra(valor_h)
-  console.log('Hora extra 50% R$', extra_h.toFixed(2))
-
-
-  let quant_extra = quantidade_extras(quantidadeHoras,extra_h.toFixed(2))
-  console.log('Extra a receber R$',quant_extra.toFixed(2))
-
-
-  console.log(`Rendimentos R$ ${soma_sal_extra(quant_extra,salario ).toFixed(2)}`)
-
-
+    }
 
 }
 
-
-
-sistema_rh()
+let salario   =  new Salario(220,2000)
+let hora_colaborador = salario.hora_colaborador()
+console.log('Valor hora R$', salario.hora_colaborador())
+console.log('Extra R$', salario.extra_colaborador(hora_colaborador))
+let quantidade_h =  10
+console.log('Quantidade de hora extra', quantidade_h)
+let extra  =  salario.extra_colaborador(hora_colaborador)
+console.log('Valor extra R$', salario.quant_extra(quantidade_h,extra))
+let _extra_t = salario.quant_extra(quantidade_h,extra)
+console.log('Total Salario R$', salario.salario_total(2000,_extra_t))
